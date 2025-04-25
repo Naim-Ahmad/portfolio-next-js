@@ -6,16 +6,16 @@ import Link from "next/link"
 export default function Hero() {
   return (
     <section id="home" className="py-20 md:py-32 relative overflow-hidden">
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="container px-4 md:px-6 mx-auto relative z-10">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Web Developer</div>
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Hello, I'm <span className="text-primary">John Doe</span>
+              Hello, I'm <span className="text-primary">Naim Ahmad</span>
             </h1>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl">
+            <p className="max-w-[700px] text-muted-foreground md:text-xl">
               A passionate web developer creating beautiful and functional websites. I specialize in frontend
-              development with React and Next.js.
+              development with React and Next.js, and in backend development with Node.js and Express.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button size="lg" asChild>
@@ -26,7 +26,7 @@ export default function Hero() {
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link href="https://github.com/Naim-Ahmad" target="_blank" className="text-muted-foreground hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -43,7 +43,7 @@ export default function Hero() {
                   <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link href="https://www.linkedin.com/in/naim-ahmad-developer" target="_blank" className="text-muted-foreground hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -80,7 +80,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative lg:ml-auto">
-            <div className="relative h-[400px] w-[400px] rounded-full overflow-hidden border-4 border-primary/20">
+            <div className="relative w-full aspect-square md:w-[400px] rounded-full overflow-hidden border-4 border-primary/20">
               <Image src={profileImage} alt="Profile" fill className="object-cover" />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-background p-4 rounded-lg shadow-lg">
