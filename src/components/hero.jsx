@@ -27,7 +27,7 @@ export default function Hero() {
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
-              <Link href="https://github.com/Naim-Ahmad" target="_blank" className="text-muted-foreground hover:text-primary">
+              <Link href={personalInfo.github} target="_blank" className="text-muted-foreground hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -44,7 +44,7 @@ export default function Hero() {
                   <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
               </Link>
-              <Link href="https://www.linkedin.com/in/naim-ahmad-developer" target="_blank" className="text-muted-foreground hover:text-primary">
+              <Link href={personalInfo.linkedin} target="_blank" className="text-muted-foreground hover:text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -62,21 +62,8 @@ export default function Hero() {
                   <circle cx="4" cy="4" r="2" />
                 </svg>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-twitter"
-                >
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                </svg>
+              <Link href={personalInfo.facebook} className="text-muted-foreground hover:text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
               </Link>
             </div>
           </div>
