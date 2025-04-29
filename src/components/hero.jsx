@@ -1,5 +1,6 @@
 import profileImage from "@/assets/naim_ahmad.jpg"
 import { Button } from "@/components/ui/button"
+import personalInfo from "@/data"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -11,7 +12,7 @@ export default function Hero() {
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Web Developer</div>
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Hello, I'm <span className="text-primary">Naim Ahmad</span>
+              Hello, I'm <span className="text-primary">{personalInfo.name}</span>
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
               A passionate web developer creating beautiful and functional websites. I specialize in frontend
