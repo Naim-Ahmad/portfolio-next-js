@@ -58,7 +58,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="container md:hidden py-4 pb-6">
+        <div className="container md:hidden py-4 pb-6 px-4 md:px-6 ">
           <nav className="flex flex-col space-y-4">
             <Link
               href="#home"

@@ -1,7 +1,10 @@
 import About from "@/components/about";
+import Experience from "@/components/experience";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
+import Portfolio from "@/components/portfolio";
+import Reviews from "@/components/reviews";
 import Skills from "@/components/skills";
 
 export default function Home() {
@@ -12,6 +15,9 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <Experience />
+        <Portfolio />
+        <Reviews />
       </main>
       <Footer />
     </div>
