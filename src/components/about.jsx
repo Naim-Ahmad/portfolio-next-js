@@ -1,4 +1,6 @@
+import naimWithLaptop from "@/assets/naim_using_pc-min.jpg"
 import { Button } from "@/components/ui/button"
+import personalInfo from "@/data"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -17,16 +19,16 @@ export default function About() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center mt-12">
           <div className="relative">
             <div className="relative h-[500px] w-full overflow-hidden rounded-lg border-8 border-muted">
-              <Image src="/placeholder.svg?height=500&width=400" alt="About Me" fill className="object-cover" />
+              <Image src={naimWithLaptop} alt="About Me" fill className="object-cover" />
             </div>
             <div className="absolute -bottom-5 -right-5 bg-primary text-primary-foreground p-4 rounded-lg shadow-lg">
-              <p className="text-4xl font-bold">5+</p>
+              <p className="text-4xl font-bold">{new Date().getFullYear() - new Date(personalInfo.careerStartDate).getFullYear()}+</p>
               <p className="text-sm">Years of Experience</p>
             </div>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">I'm John Doe, a Web Developer</h3>
+            <h3 className="text-2xl font-bold">I'm {personalInfo.name}, a Web Developer</h3>
             <p className="text-muted-foreground">
               I help businesses and individuals bring their ideas to life on the web. With over 5 years of experience in
               web development, I've worked with clients from various industries to create beautiful, functional, and
@@ -41,19 +43,19 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div>
                 <p className="font-medium">Name:</p>
-                <p className="text-muted-foreground">John Doe</p>
+                <p className="text-muted-foreground">{personalInfo.name}</p>
               </div>
               <div>
                 <p className="font-medium">Email:</p>
-                <p className="text-muted-foreground">john@example.com</p>
+                <p className="text-muted-foreground">{personalInfo.email}</p>
               </div>
               <div>
                 <p className="font-medium">Age:</p>
-                <p className="text-muted-foreground">28</p>
+                <p className="text-muted-foreground">{new Date().getFullYear() - new Date(personalInfo.dateOfBirth).getFullYear()}</p>
               </div>
               <div>
                 <p className="font-medium">From:</p>
-                <p className="text-muted-foreground">New York, USA</p>
+                <p className="text-muted-foreground">{personalInfo.location}</p>
               </div>
             </div>
 
